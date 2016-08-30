@@ -1,0 +1,628 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"divisors"
+			],
+			[
+				"MA",
+				"Material-Theme"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "init.sh",
+			"settings":
+			{
+				"buffer_size": 1261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "add-repositories.sh",
+			"settings":
+			{
+				"buffer_size": 1827,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "storage.sh",
+			"settings":
+			{
+				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "remove.sh",
+			"settings":
+			{
+				"buffer_size": 34,
+				"line_ending": "Unix",
+				"name": "remove.sh"
+			}
+		},
+		{
+			"file": "data/essentials.list",
+			"settings":
+			{
+				"buffer_size": 440,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/development.list",
+			"settings":
+			{
+				"buffer_size": 149,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "customisations.sh",
+			"settings":
+			{
+				"buffer_size": 362,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/codecs.list",
+			"settings":
+			{
+				"buffer_size": 104,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 179.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			]
+		],
+		"width": 414.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"sublime.log_input(False)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/bogdan/Scripts/post-install",
+		"/home/bogdan/Scripts/post-install/data"
+	],
+	"file_history":
+	[
+		"/home/bogdan/Scripts/post-install/de.sh",
+		"/home/bogdan/.bashrc",
+		"/home/bogdan/.mozilla/firefox/fh2p2xfm.dev-edition-default/sessionstore-backups/recovery.js",
+		"/home/bogdan/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/bogdan/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/bogdan/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/bogdan/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/bogdan/Scripts/post-install/codecs.sh",
+		"/home/bogdan/Scripts/post-install/data/development.list",
+		"/home/bogdan/Scripts/post-install/data/emulators.list",
+		"/home/bogdan/Projects/biggestPrime.js",
+		"/home/bogdan/Projects/palindrome.js",
+		"/home/bogdan/Projects/computerGuess.js",
+		"/home/bogdan/Development/homestead/starter/app/Article.php",
+		"/home/bogdan/Development/homestead/starter/app/Http/Controllers/HomeController.php",
+		"/home/bogdan/Development/homestead/starter/app/Handlers/Commands/indexCommandHandler.php",
+		"/home/bogdan/Development/homestead/starter/app/Providers/BusServiceProvider.php",
+		"/home/bogdan/Development/homestead/starter/app/Commands/indexCommand.php",
+		"/home/bogdan/Development/homestead/starter/config/app.php",
+		"/home/bogdan/Development/homestead/starter/app/Jobs/Job.php",
+		"/home/bogdan/Development/homestead/starter/database/factories/ModelFactory.php",
+		"/home/bogdan/Development/homestead/starter/config/database.php",
+		"/home/bogdan/Development/homestead/starter/app/Http/Controllers/AdminController.php",
+		"/home/bogdan/Development/homestead/starter/app/Http/Controllers/ArticlesController.php",
+		"/home/bogdan/Development/homestead/starter/resources/views/pages/home.blade.php",
+		"/home/bogdan/Development/homestead/starter/public/js/admin.js",
+		"/home/bogdan/Scripts/post-install/essentials.sh",
+		"/home/bogdan/Scripts/post-install/emulators.sh",
+		"/home/bogdan/Scripts/post-install/add-repositories.sh",
+		"/home/bogdan/Scripts/post-install/configuration.sh",
+		"/home/bogdan/Scripts/post-install/customisations.sh",
+		"/home/bogdan/Scripts/post-install/startup.sh",
+		"/home/bogdan/Documents/test.html",
+		"/home/bogdan/Documents/test.js",
+		"/home/bogdan/Documents/universul.txt",
+		"/home/bogdan/Scripts/post-install/customisations.sh~",
+		"/home/bogdan/Scripts/startup/example.sh",
+		"/home/bogdan/Scripts/startup/configuration.sh",
+		"/home/bogdan/Scripts/startup/startup.sh",
+		"/home/bogdan/Scripts/startup/third-party-software.sh",
+		"/home/bogdan/Scripts/startup/add-repositories.sh",
+		"/home/bogdan/Scripts/startup/essentials.sh",
+		"/home/bogdan/Scripts/startup/codecs.sh",
+		"/home/bogdan/Scripts/startup/customisations.sh",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/favourites.list",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/design.list",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/development.list",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/utilities.list",
+		"/home/bogdan/Scripts/ubuntu-post-install/functions/gnome",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/editors.list",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/ppas.extra",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/ppas.list",
+		"/home/bogdan/Scripts/ubuntu-post-install/ubuntu-post-install-script.sh",
+		"/home/bogdan/Scripts/ubuntu-post-install/functions/development",
+		"/home/bogdan/Scripts/ubuntu-post-install/functions/upgrade",
+		"/home/bogdan/Scripts/ubuntu-post-install/functions/addppas",
+		"/home/bogdan/Scripts/ubuntu-post-install/functions/config",
+		"/home/bogdan/Scripts/ubuntu-post-install/functions/codecs",
+		"/home/bogdan/Scripts/ubuntu-post-install/data/browsers.list",
+		"/home/bogdan/Scripts/startup.sh"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/bogdan/Scripts/ubuntu-post-install/functions"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http://",
+			"restore",
+			"wrap",
+			"node",
+			"shortcut",
+			"key",
+			"ctrl+b",
+			"ctrl+k",
+			"extras",
+			"forge",
+			"stop",
+			"@stop",
+			"laravel",
+			"{{",
+			"dropbox",
+			"gparted",
+			"tweak",
+			"add-apt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "init.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "add-repositories.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1827,
+								1827
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 612.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "storage.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "remove.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"auto_name": "remove.sh",
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "data/essentials.list",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "data/development.list",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "customisations.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "data/codecs.list",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "post-install.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"code",
+				"post-install/data/codecs.list"
+			],
+			[
+				"custom",
+				"post-install/customisations.sh"
+			],
+			[
+				"de",
+				"post-install/de.sh"
+			],
+			[
+				"article",
+				"app/Article.php"
+			],
+			[
+				"homeco",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"confi/data",
+				"config/database.php"
+			],
+			[
+				"app.p",
+				"config/app.php"
+			],
+			[
+				"home.blade",
+				"resources/views/pages/home.blade.php"
+			],
+			[
+				"",
+				"essentials.sh"
+			],
+			[
+				"codec",
+				"post-install/codecs.sh"
+			],
+			[
+				"data/",
+				"data/favourites.list"
+			],
+			[
+				".list",
+				"data/design.list"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
