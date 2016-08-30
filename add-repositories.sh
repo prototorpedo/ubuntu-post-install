@@ -46,10 +46,14 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 
 # Customisations
-sudo add-apt-repository ppa:numix/ppa
-sudo add-apt-repository ppa:noobslab/themes
-sudo add-apt-repository ppa:noobslab/icons
-sudo add-apt-repository ppa:moka/stable
+DISTRIB=$(python -mplatform)
+
+if DISTRIB | grep Ubuntu; then
+	#statements
+	while read l; do
+		sudo add-apt-repository $l
+	done <data/cusoms-ubuntu.list
+fi
 
 
 # Install steps for rssowl ?
