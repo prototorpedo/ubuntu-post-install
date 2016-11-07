@@ -6,7 +6,6 @@ mpeg3-utils
 id3v2
 mpg321
 mpg123
-libflac++6v5
 libflac8
 libavcodec-extra
 libav-tools

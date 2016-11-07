@@ -1,2 +1,2 @@
 
-sudo apt-get remove --purge vim-*
+sudo apt-get remove --purge firefox vim-*

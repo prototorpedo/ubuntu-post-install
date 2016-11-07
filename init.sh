@@ -1,41 +1,55 @@
 #!bin/bash
 
-# Add repos
-# . ./add-repositories.sh
+# Remove unwanted software
+. ./remove.sh
 
-# sudo apt-get update
-# sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get -y clean
+# Add repos
+. ./add-repositories.sh
+
+sudo apt-get update
+sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get -y clean
 
 # Variables
 FILE='mktemp'
 APT_LIST=''
 
 # Installing essentials
-#sudo apt-get install -f -y -qq $(cat ./data/essentials.list | grep -v //)
 while read l; do
 	APT_LIST+=" $l"
 done <data/essentials.list
 
-# sudo apt-get install -y -qq $APT_LIST
-echo $APT_LIST
-$APT_LIST=''
+sudo apt-get install -f -y -qq $APT_LIST
 
 # Start essential services
 # sudo tlp start
-# sudo preload
 
 # Install ZShell and make it default
 . ./zsh.sh
 
+# Nautilus extras
+. ./storage.sh
+
 read -p "Done with essentials..."
+APT_LIST=''
+
+# Installing codecs & such
+while read l; do
+	APT_LIST+=" $l"
+done <data/codecs.list
+
+sudo apt-get install -f -y -qq $APT_LIST
+
+read -p "Done with codecs..."
+APT_LIST=''
 
 # Install browsers and chat
 while read l; do
 	APT_LIST+=" $l"
 done <data/browsers-and-chat.list
 
-# sudo apt-get install -y -qq $APT_LIST
-echo $APT_LIST
+sudo apt-get install -f -y -qq $APT_LIST
+
+read -p "Done with browsers and chat..."
 APT_LIST=''
 
 # Installing development
@@ -43,41 +57,32 @@ while read l; do
 	APT_LIST+=" $l";
 done <data/development.list
 
-# sudo apt-get install -y -qq $APT_LIST
-echo $APT_LIST
-APT_LIST=''
+sudo apt-get install -y -qq $APT_LIST
 
 # VundleVim + Vim config of champions
-# git clone http://github.com/mutewinter/dot_vim.git ~/.vim
+if [ "$(ls -A ~/.vim)" ]; then
+	rm -Rf ~/.vim/*
+else
+	mkdir ~/.vim
+fi
+git clone http://github.com/mutewinter/dot_vim.git ~/.vim
+bash ~/.vim/scripts/setup
+bash ~/.vim/bundle/ctrlp-cmatcher/install.sh
 
-# bash ~/.vim/scripts/setup
-
-# bash ~/.vim/bundle/ctrlp-cmatcher/install.sh
-
-alias --global vi='nvim'
+sudo ln -s /usr/bin/neovim /usr/bin/vi
 
 read -p "Done with development..."
+APT_LIST=''
 
 # Installing third party software
-# . ./third-party-software.sh
+. ./third-party-software.sh
 
 read -p "Done with third party..."
 
 # Customisations
-# . ./customisations.sh
+. ./customisations.sh
 
 read -p "Done with customisations..."
-
-# Installing codecs & such
-# . ./codecs.sh
-
-read -p "Done with codecs..."
-
-
-# Configuration
-#. ./configuration.sh
-
-# read -p "Done with configuration..."
 
 # Clean up
 echo "Cleaning Up" &&

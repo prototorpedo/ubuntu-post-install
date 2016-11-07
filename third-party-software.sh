@@ -12,24 +12,9 @@ wget "$URL" -qO $FILE && sudo dpkg -i $FILE
 
 rm $FILE
 
-# Docker
-echo "Docker...\n"
-wget -qO- https://get.docker.com/ | sh
-
-# Puppet
-#URL='https://apt.puppetlabs.com/puppetlabs-release-trusty.deb'
-#wget "$URL" -qO $FILE && sudo dpkg -i $FILE
-
-#rm $FILE
-
-# Playonlinux, ScummVM
+# Playonlinux
 echo "Playonlinux...\n"
 URL='https://www.playonlinux.com/script_files/PlayOnLinux/4.2.9/PlayOnLinux_4.2.9.deb'
 wget "$URL" -qO $FILE && sudo dpkg -i $FILE
 
 rm $FILE
-
-# Minitube
-echo "minitube...\n"
-URL='http://flavio.tordini.org/files/minitube/minitube64.deb'
-wget "$URL" -qO $FILE && sudo dpkg -i $FILE
