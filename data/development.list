@@ -1,5 +1,6 @@
 git
 git-core
+git-cola
 git-doc
 git-extras
 terminator
@@ -10,4 +11,4 @@ sublime-text-installer
 atom
 ruby-full
 nodejs
-php5-cli
+python-pip

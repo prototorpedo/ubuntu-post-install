@@ -39,7 +39,7 @@ done <data/codecs.list
 
 sudo apt-get install -f -y -qq $APT_LIST
 
-read -p "Done with codecs..."
+read -p "\n\nDone with codecs..."
 APT_LIST=''
 
 # Install browsers and chat
@@ -69,7 +69,17 @@ git clone http://github.com/mutewinter/dot_vim.git ~/.vim
 bash ~/.vim/scripts/setup
 bash ~/.vim/bundle/ctrlp-cmatcher/install.sh
 
-sudo ln -s /usr/bin/neovim /usr/bin/vi
+# Powerline + powerline fonts
+# Follow answer @ http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
+pip install powerline-status
+
+sudo ln -s /usr/bin/nvim /usr/bin/vi
+
+# Pretty fonts
+if ![ "$(ls -A ~/.fonts)" ]; then
+	mkdir ~/.fonts
+fi
+mv data/fonts/* ~/.fonts
 
 read -p "Done with development..."
 APT_LIST=''
