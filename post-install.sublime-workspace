@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "add-repositories.sh",
-			"settings":
-			{
-				"buffer_size": 901,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -73,18 +65,24 @@
 	],
 	"file_history":
 	[
-		"/home/bogdan/Scripts/post-install/data/essentials.list",
-		"/home/bogdan/Scripts/post-install/add-repositories.sh",
 		"/home/bogdan/Scripts/post-install/init.sh",
+		"/home/bogdan/Scripts/post-install/storage.sh",
+		"/home/bogdan/Scripts/post-install/zsh.sh",
+		"/home/bogdan/Scripts/post-install/third-party-software.sh",
+		"/home/bogdan/Scripts/post-install/customisations.sh",
+		"/home/bogdan/Scripts/post-install/data/repositories.list",
+		"/home/bogdan/Scripts/post-install/data/essentials.list",
+		"/home/bogdan/Scripts/post-install/data/emulators.list",
+		"/home/bogdan/Scripts/post-install/data/development.list",
+		"/home/bogdan/Scripts/post-install/remove.sh",
+		"/home/bogdan/Scripts/post-install/post-install.sublime-project",
+		"/home/bogdan/Scripts/post-install/README.md",
 		"/home/bogdan/Scripts/post-install/data/browsers-and-chat.list",
 		"/home/bogdan/Scripts/post-install/data/codecs.list",
-		"/home/bogdan/Scripts/post-install/data/development.list",
-		"/home/bogdan/Scripts/post-install/zsh.sh",
+		"/home/bogdan/Scripts/post-install/data/customs-repositories-ubuntu.list",
+		"/home/bogdan/Scripts/post-install/add-repositories.sh",
 		"/home/bogdan/Scripts/post-install/data/customs-ubuntu.list",
-		"/home/bogdan/Scripts/post-install/customisations.sh",
 		"/home/bogdan/.zshrc",
-		"/home/bogdan/Scripts/post-install/storage.sh",
-		"/home/bogdan/Scripts/post-install/remove.sh",
 		"/home/bogdan/Scripts/post-install/configuration.sh",
 		"/home/bogdan/Scripts/post-install/index.html",
 		"/home/bogdan/Scripts/post-install/de.sh",
@@ -95,7 +93,6 @@
 		"/home/bogdan/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/bogdan/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
 		"/home/bogdan/Scripts/post-install/codecs.sh",
-		"/home/bogdan/Scripts/post-install/data/emulators.list",
 		"/home/bogdan/Projects/biggestPrime.js",
 		"/home/bogdan/Projects/palindrome.js",
 		"/home/bogdan/Projects/computerGuess.js",
@@ -146,7 +143,7 @@
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -162,6 +159,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"remove",
 			"alias",
 			"libavcodec-extra",
 			"http://",
@@ -199,37 +197,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "add-repositories.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 901,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -264,6 +233,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -377,7 +350,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 255.0,
 	"status_bar_visible": true,
 	"template_settings":
