@@ -1,5 +1,15 @@
 #!bin/bash
 
+install_list() {
+  LIST=''
+
+  while read l; do
+  	LIST+=" $l";
+  done <$1
+
+  sudo apt-get install -y -qq $LIST
+}
+
 # Remove unwanted software
 . ./remove.sh
 
@@ -13,15 +23,15 @@ sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get -y clean
 FILE='mktemp'
 APT_LIST=''
 
+# Temp folder
+mkdir ./tmp
+
 # Installing essentials
 while read l; do
 	APT_LIST+=" $l"
 done <data/essentials.list
 
 sudo apt-get install -f -y -qq $APT_LIST
-
-# Start essential services
-# sudo tlp start
 
 # Install ZShell and make it default
 . ./zsh.sh
@@ -52,24 +62,7 @@ sudo apt-get install -f -y -qq $APT_LIST
 read -p "Done with browsers and chat..."
 APT_LIST=''
 
-# Installing development
-while read l; do
-	APT_LIST+=" $l";
-done <data/development.list
-
-sudo apt-get install -y -qq $APT_LIST
-
-# VundleVim + Vim config of champions
-if [ "$(ls -A ~/.vim)" ]; then
-	rm -Rf ~/.vim/*
-else
-	mkdir ~/.vim
-fi
-git clone http://github.com/mutewinter/dot_vim.git ~/.vim
-bash ~/.vim/scripts/setup
-bash ~/.vim/bundle/ctrlp-cmatcher/install.sh
-
-sudo ln -s /usr/bin/neovim /usr/bin/vi
+. ./development.sh
 
 read -p "Done with development..."
 APT_LIST=''
@@ -84,7 +77,16 @@ read -p "Done with third party..."
 
 read -p "Done with customisations..."
 
+# Laptop only
+if [ -d /proc/acpi/battery/BAT* ]; then
+  sudo apt-get install -y tlp tlp-rdw
+  sudo tlp start
+fi
+
 # Clean up
+
+rm -rf ./tmp
+
 echo "Cleaning Up" &&
 sudo apt-get -f install &&
 sudo apt-get autoremove &&
