@@ -4,10 +4,10 @@ cd ./tmp
 
 # Essentials (git, terminator, editors)
 #
-install_list 'data/development/essentials.list'
+install_list './data/development/essentials.list'
 
 # Installing editors
-install_list 'data/development/editors.list'
+install_list './data/development/editors.list'
 
 sudo ln -s /usr/bin/neovim /usr/bin/vi
 
@@ -15,7 +15,7 @@ sudo ln -s /usr/bin/neovim /usr/bin/vi
 
 # Installing php w/ composer & laravel + symfony installers
 #
-install_list 'data/development/php.list'
+install_list './data/development/php.list'
 
 # Composer
 curl -sS https://getcomposer.org/installer -o composer-setup.php
