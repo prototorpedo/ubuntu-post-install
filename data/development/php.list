@@ -4,4 +4,5 @@ php-mcrypt
 php-zip
 php-json
 php-intl
+php-mbstring
 composer
